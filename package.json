@@ -1,0 +1,28 @@
+{
+  "name": "node-koa-starter",
+  "author": {
+    "email": "ayiexz22@gmail.com",
+    "name": "Arief Setiyo Nugroho",
+    "url": "https://ariefsn.dev"
+  },
+  "type": "module",
+  "scripts": {
+    "dev": "ts-node --experimental-specifier-resolution=node ./src/app.ts",
+    "build": "tsc",
+    "start": "node --experimental-specifier-resolution=node ./dist/app.js"
+  },
+  "devDependencies": {
+    "@types/koa": "^2.13.5",
+    "@types/node": "^18.7.23",
+    "@types/koa__router": "^12.0.0",
+    "nodemon": "^2.0.20",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.8.4"
+  },
+  "dependencies": {
+    "@koa/router": "^12.0.0",
+    "dotenv": "^16.0.2",
+    "dayjs": "^1.11.5",
+    "koa": "^2.13.4"
+  }
+}
