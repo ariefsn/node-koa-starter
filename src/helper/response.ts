@@ -8,6 +8,6 @@ export const respOk = (data: any, message?: string): IResponse => ({
 
 export const respErr = (message: string): IResponse => ({
   data: null,
-  status: true,
+  status: false,
   message
 })

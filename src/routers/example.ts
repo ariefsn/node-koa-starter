@@ -1,16 +1,20 @@
 import { respOk } from '../helper'
 import Router from '@koa/router'
 
-export const example = new Router({ prefix: '/example', methods: ['GET', 'POST', 'PUT'] })
+export const example = new Router({ prefix: '/example' })
 
-example.get('/', (ctx, next) => {
+example.get('/', (ctx) => {
   ctx.body = respOk(ctx.req.method)
 })
 
-example.post('/', (ctx, next) => {
+example.post('/', (ctx) => {
+  ctx.body = respOk(ctx.request.body)
+})
+
+example.put('/', (ctx,) => {
   ctx.body = respOk(ctx.req.method)
 })
 
-example.put('/', (ctx, next) => {
+example.delete('/', (ctx) => {
   ctx.body = respOk(ctx.req.method)
 })
